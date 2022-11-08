@@ -1,6 +1,44 @@
 [
     {
         "topic": "Math",
-        "img": ""
+        "img": "https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": "2000",
+        "rating": "4.9",
+        "text": "Math is an abbreviation of mathematics, which is a count noun in British English because there are different types of maths (geometry, algebra, calculus, etc.) and a mass noun that happens to end in an 's' in American English (like gymnastics in both dialects)."
+    },
+    {
+        "topic": "Physics",
+        "img": "https://images.pexels.com/photos/197293/pexels-photo-197293.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "3000",
+        "rating": "4.5",
+        "text": "Students and researchers alike have long understood that physics is challenging. But only now have scientists managed to prove it. It turns out that one of the most common goals in physics—finding an equation that describes how a system changes over time—is defined as hard by computer theory."
+    },
+    {
+        "topic": "Chemistry",
+        "img": "https://images.pexels.com/photos/3735703/pexels-photo-3735703.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "2000",
+        "rating": "4.2",
+        "text": " Chemistry is essential for meeting our basic needs of food, clothing, shelter, health, energy, and clean air, water, and soil. Chemical technologies enrich our quality of life in numerous ways by providing new solutions to problems in health, materials, and energy usage."
+    },
+    {
+        "topic": "Biology",
+        "img": "https://images.pexels.com/photos/5063442/pexels-photo-5063442.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "1000",
+        "rating": "4.4",
+        "text": "the science of life and living organismsThe word biology is derived from the greek words /bios/ meaning /life/ and /logos/ meaning /study/ and is defined as the science of life and living organisms. An organism is a living entity consisting of one cell e.g. bacteria, or several cells e.g. animals, plants and fungi."
+    },
+    {
+        "topic": "English",
+        "img": "https://images.pexels.com/photos/5676740/pexels-photo-5676740.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": "2500",
+        "rating": "4.9",
+        "text": "The closest language to English is one called Frisianwhich is a Germanic language spoken by a small population of about 480,000 people. There are three separate dialects of the language, and it's only spoken at the southern fringes of the North Sea in the Netherlands and Germany.."
+    },
+    {
+        "topic": "Ict",
+        "img": "https://media.istockphoto.com/id/1295900106/photo/data-scientists-male-programmer-using-laptop-analyzing-and-developing-in-various-information.jpg?b=1&s=612x612&w=0&k=20&c=OuuM-gdJmwzZrW7_Brh0VkXedyx8JX5mzV7-9eM-VdY=",
+        "price": "4000",
+        "rating": "4.6",
+        "text": "Information and Communication Technologies (ICTs) is a broader term for Information Technology (IT), which refers to all communication technologies, including the internet, wireless networks, cell phones, computers, software, middleware, video-conferencing, social networking, and other media applications and services"
     }
 ]
