@@ -17,7 +17,12 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         const tutionCollection = client.db('Tutions').collection('subjects')
-
+        app.post('/subject', async (req, res) => {
+            const subject = req.body
+            const result = await tutionCollection.insertOne(subject)
+            console.log(result)
+            res.send(result)
+        })
         app.get('/subjects', async (req, res) => {
             const query = {}
             const cursor = tutionCollection.find(query)
