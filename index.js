@@ -73,7 +73,7 @@ run().catch(err => console.error(err))
 
 //test
 app.get('/', (req, res) => {
-    res.send('Our service server is running on.')
+    res.send('Our service server is running on fire.')
 })
 app.listen(port, () => {
     console.log(`Our service local server is running on ${port}`)
