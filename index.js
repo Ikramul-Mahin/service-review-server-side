@@ -22,7 +22,6 @@ async function run() {
         app.post('/subject', async (req, res) => {
             const subject = req.body
             const result = await tutionCollection.insertOne(subject)
-            console.log(result)
             res.send(result)
         })
 
@@ -57,12 +56,33 @@ async function run() {
             const result = await reviewCollection.insertOne(review)
             res.send(result)
         })
+
+
+        //api with email query
         app.get('/reviews', async (req, res) => {
-            const query = {}
+            let query = {}
+            if (req.query.email) {
+                query = {
+                    email: req.query.email
+                }
+            }
+            console.log(req.query.email)
             const cursor = reviewCollection.find(query)
             const reviews = await cursor.toArray()
             res.send(reviews)
 
+        })
+        app.get('/reviews/:id', async (req, res) => {
+            const id = req.params.id
+            const query = { _id: ObjectId(id) }
+            const result = await reviewCollection.findOne(query)
+            res.send(result)
+        })
+        app.delete('/reviews/:id', async (req, res) => {
+            const id = req.params.id
+            const query = { _id: ObjectId(id) }
+            const result = await reviewCollection.deleteOne(query)
+            res.send(result)
         })
     }
     finally {
